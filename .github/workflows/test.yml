@@ -1,0 +1,9 @@
+on: workflow_dispatch
+
+jobs:
+  test:
+    # This job only runs for pull request comments
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test"
